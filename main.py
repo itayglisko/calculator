@@ -29,3 +29,18 @@ def pow(num1, num2):
     else:
         print(num1 ** num2)
 
+if __name__ == '__main__':
+    print("1.add\n2.substruction\n3.multipication\n4.division\n5.power")
+    match input("enter 1 for add 2 for substruction etc\n"):
+        case '1':
+            add(5,7)
+        case '2':
+            sub(5,7)
+        case '3':
+            mul(-5,9)
+        case '4':
+            div(-5,0)
+        case '5':
+            pow(0,0)
+        case _:
+            print("invalid input!")
